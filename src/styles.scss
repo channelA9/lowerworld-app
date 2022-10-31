@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--aureolin: #ffee30ff;
+--eggplant: #6f5060ff;
+--burnished-brown: #a78682ff;
+--snow: #fffafbff;
+--black: #000000ff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

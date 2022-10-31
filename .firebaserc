@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lowerworld-b30c5": {
+      "hosting": {
+        "lowerworld-web-app": [
+          "lowerworld-b30c5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lowerworld-b30c5"
+  }
+}

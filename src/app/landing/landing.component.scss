@@ -1,0 +1,80 @@
+
+
+.hero {
+    background-image: url("../../assets/hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+
+svg {
+    cursor:pointer;
+    animation: floating 7s 0s ease-in-out infinite;
+}
+
+svg:hover #logo-top {
+    animation: shiftLeft 0.5s ease forwards;
+}
+svg:hover #logo-bottom {
+    animation: shiftRight 0.5s ease forwards;
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes shiftDown {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        rotate:0deg
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        rotate:1080deg
+    }
+}
+
+@keyframes shiftRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes shiftLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

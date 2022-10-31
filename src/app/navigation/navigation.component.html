@@ -1,0 +1,16 @@
+<nav class="min-h-screen w-24 text-white bg-none fixed z-50 font-poppins drop-shadow-2xl flex flex-col">
+    <h1 class="font-mochiy text-5xl w-full h-24">下界</h1>
+    <ul>
+        <li #home class='w-full h-24'>
+            <button (click)="calculateHeight(home)" routerLink="/home" class="w-full min-h-full">Home</button>
+        </li>
+        <li #blog class='w-full h-24'>
+            <button (click)="calculateHeight(blog)" routerLink="/blog" class="w-full min-h-full">Blog</button>
+        </li>
+        <li #slider class='slider bg-white' [style.top.px]="offTop" [style.height.px]="offHeight">
+        </li>
+    </ul>
+    <div id="indicator">
+
+    </div>
+</nav>

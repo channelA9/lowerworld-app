@@ -100,6 +100,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "lowerworld-web-app:build:production",
+            "firebaseProject": "lowerworld-b30c5",
+            "firebaseHostingSite": "lowerworld-b30c5"
+          }
         }
       }
     }
